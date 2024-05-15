@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styls.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info</title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="img/logo.jpg" alt="logo">
+  </div>
+  <nav class="barra">
+    <a class="btn" href="index.html">
+        <p>Inicio</p>
+    </a>
+    <a class="btn" href="tienda.html">
+        <p>Tienda</p>
+    </a>
+    <a class="btn" href="info.html">
+        <p>Info</p>
+    </a>
+</nav>
+  <main class="cuerpo">
+    <div class="articulo">
+      <div class="texto">
+        <p> Aca hablaremos de cosas
+        </p>
+      </div>
+      <div class="contForm" id="formCont">
+        <h1>Dejenos un comentario!</h1>
+        <div id="erradoss">
+        </div>
+        <div class="formulario">
+          <form id="MyForm" novalidate>
+            <label for="nombre">Nombre y apellido:</label><br>
+            <input type="text" id="nombre" placeholder="Nombre"><br>
+            <label for="celular">Celular:</label><br>
+            <input type="tel" id="celular" placeholder="Celular"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <label for="comentario">E-mail:</label><br>
+            <textarea id="comentario" cols="30" rows="10" placeholder="Algún comentario..."></textarea><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="JavaScrip/jsformu.js"></script>
+</body>
+
+</html>
