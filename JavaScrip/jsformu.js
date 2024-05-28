@@ -23,10 +23,14 @@ form.addEventListener('submit', (e) => {
         mensajeOk.push(`Nombre: ${nombre.value}`)
     }
 
+    const celularRegex = /^[0-9]+$/;
     if (celular.value.trim() === '') {
         celular.classList.add('error');
         mensajeError.push("*Debe ingresar un celular");
         errores++;
+    } else if (!celularRegex.test(celular.value)) {
+        celular.classList.add('error');
+        mensajeError.push("*Debe ingresar solo números en el celular");
     } else {
         celular.classList.remove('error');
         mensajeOk.push(`Celular: ${celular.value}`)
