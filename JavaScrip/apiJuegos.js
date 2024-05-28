@@ -50,7 +50,7 @@ async function obtenerJuegos() {
                       <div class="titulo">${juego.name}</div>
                       <img src="${juego.thumbnail}" alt="${juego.name}">
                       <div class="descripcion">${juego.description}</div>
-                      <div class="duracion"> Duracion:${
+                      <div class="duracion"> Duracion: ${
                         juego.playingTime
                       } minutos</div>
                       <div class="cantJugadores"> De ${juego.minPlayers} a ${juego.maxPlayers} jugadores</div>
