@@ -98,14 +98,30 @@
   text-decoration: underline;
 }
 
-.categoria {
-  text-align: left;
-  color: #888;
+.duracion, .cantJugadores {
+  padding: 5px;
+  margin: 6px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  font-size: 14px;
 }
 
-.precio {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+.agregar-carrito {
+  display: block;
+  width: calc(100% - 12px);
+  margin: 6px;
+  padding: 10px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+  background-color: #0056b3;
 }
 
 /*----------------------Formulario----------------------*/
