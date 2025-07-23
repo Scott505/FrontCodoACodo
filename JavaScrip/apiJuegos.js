@@ -5,7 +5,7 @@ async function obtenerJuegos() {
     let listaJuegos = [];
     // Esperar a que se resuelvan todas las promesas
     const juegos = await Promise.all(
-      Array.from({ length: 30 }, (_, i) =>
+      Array.from({ length: 16 }, (_, i) =>
         fetch(`https://bgg-json.azurewebsites.net/thing/${i + 1}`).then(
           (response) => response.json()
         )
